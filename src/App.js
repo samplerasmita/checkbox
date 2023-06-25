@@ -50,14 +50,14 @@ const App = () => {
 
   return (
     <div className="container">
-      <h1 className="mt-3">Task Manager</h1>
+      <h4 className="mt-3">Task Manager</h4>
       <div className="row mb-2">
         <div className="col-md-6">
           <input
             type="text"
             value={newTask.name}
             onChange={(e) => setNewTask({ ...newTask, name: e.target.value })}
-            placeholder="Enter task name"
+            placeholder="Enter Task Name"
             className="form-control"
           />
         </div>
@@ -68,7 +68,7 @@ const App = () => {
             type="text"
             value={newTask.description}
             onChange={(e) => setNewTask({ ...newTask, description: e.target.value })}
-            placeholder="Enter task description"
+            placeholder="Enter Task Description"
             className="form-control"
           />
         </div>
@@ -79,7 +79,7 @@ const App = () => {
             <DatePicker
               selected={newTask.dueDate}
               onChange={(date) => setNewTask({ ...newTask, dueDate: date })}
-              placeholderText="Select due date"
+              placeholderText="Select Due Date"
               className="form-control"
             />
           </div>
